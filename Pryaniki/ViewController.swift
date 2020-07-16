@@ -10,28 +10,28 @@ import UIKit
 
 class ViewController: UIViewController  {
     
-    @IBOutlet var tableView: UITableView!
+    @IBOutlet var collectionView: UICollectionView!
     
     
     let urlString = "https://pryaniky.com/static/json/sample.json"
     
     var pryanik: Pryanik?
+    var i = 1
     
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.rowHeight = 130
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
        
         fetchData()
     }
 
-    
+    @IBAction func unwindSegue (_ sender: UIStoryboardSegue) {}
     
     
     func fetchData() {
@@ -46,7 +46,7 @@ class ViewController: UIViewController  {
                 print(self.pryanik?.data?.first?.data?.text ?? "")
                 
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    self.collectionView.reloadData()
                 }
             }
             catch let error {
@@ -57,24 +57,75 @@ class ViewController: UIViewController  {
     }
     
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "detail" else { return }
+        let detailVC = segue.destination as! DetailViewController
+        
+       if let indexPaths = self.collectionView.indexPathsForSelectedItems {
+           let indexPath = indexPaths.first
+        detailVC.data = pryanik?.data![indexPath!.row]
+     //   detailVC.idLabel.text = pryanik?.data![indexPath!.row].name
+       }
+
+    }
+    
+    
+    
 }
 
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      
-        return pryanik?.data?.count ?? 0
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+         return pryanik?.data?.count ?? 0
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+    
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! Cell
+        let name = pryanik?.data?[indexPath.item].name
+        if name == "hz" {
+        cell.label.text = pryanik?.data?[indexPath.item].name
+        } else if name == "picture" {
+            cell.label.isHidden = true
+        }
         
-        cell.label.text = pryanik?.data?[indexPath.row].name
+        
+        
         cell.configure(with: pryanik!, indexPath: indexPath)
+        cell.layer.cornerRadius = 15
+        let detailVC = DetailViewController()
+        detailVC.setupLayer(view: cell)
+        cell.layer.cornerRadius = 20
+        cell.layer.borderColor = UIColor.lightGray.cgColor
+        cell.layer.borderWidth = 3
+     
+        
         
         return cell
     }
+    
+    
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+           performSegue(withIdentifier: "detail", sender: nil)
+       }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let currentHeight = self.view.frame.size.height
+           return CGSize(width: UIScreen.main.bounds.width - 48, height: currentHeight * 2 / 9)
+       }
+    
     
     
 }

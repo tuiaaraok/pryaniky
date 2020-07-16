@@ -8,26 +8,24 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class Cell: UICollectionViewCell {
+    
     @IBOutlet var label: UILabel!
     @IBOutlet var mainImage: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
+     
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+   
     
     func configure(with pryanik: Pryanik, indexPath: IndexPath) {
         
-        if pryanik.data?[indexPath.row].name == "picture" {
+        if pryanik.data?[indexPath.item].name == "picture" {
 
-            guard let url = URL(string: pryanik.data?[indexPath.row].data?.url ?? "") else { return }
+            guard let url = URL(string: pryanik.data?[indexPath.item].data?.url ?? "") else { return }
             
             let session = URLSession.shared
             

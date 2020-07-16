@@ -14,7 +14,13 @@
 		630574CE24C047B500690D38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 630574CD24C047B500690D38 /* Assets.xcassets */; };
 		630574D124C047B500690D38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 630574CF24C047B500690D38 /* LaunchScreen.storyboard */; };
 		630574D924C048A000690D38 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574D824C0489F00690D38 /* File.swift */; };
-		630574DB24C068FB00690D38 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574DA24C068FB00690D38 /* TableViewCell.swift */; };
+		630574DB24C068FB00690D38 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574DA24C068FB00690D38 /* Cell.swift */; };
+		630574DD24C0B18A00690D38 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574DC24C0B18A00690D38 /* DetailViewController.swift */; };
+		632BB9F524C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F424C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf */; };
+		632BB9FA24C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F624C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf */; };
+		632BB9FB24C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F724C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf */; };
+		632BB9FC24C0BA8600B9F020 /* NeueAlteGrotesk-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F824C0BA8600B9F020 /* NeueAlteGrotesk-Heavy.ttf */; };
+		632BB9FD24C0BA8600B9F020 /* NeueAlteGrotesk-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F924C0BA8600B9F020 /* NeueAlteGrotesk-ExtraLight.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +33,13 @@
 		630574D024C047B500690D38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		630574D224C047B500690D38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		630574D824C0489F00690D38 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		630574DA24C068FB00690D38 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		630574DA24C068FB00690D38 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		630574DC24C0B18A00690D38 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		632BB9F424C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Bold.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		632BB9F624C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Medium.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		632BB9F724C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Book.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Book.ttf"; sourceTree = "<group>"; };
+		632BB9F824C0BA8600B9F020 /* NeueAlteGrotesk-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Heavy.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Heavy.ttf"; sourceTree = "<group>"; };
+		632BB9F924C0BA8600B9F020 /* NeueAlteGrotesk-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-ExtraLight.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-ExtraLight.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +75,17 @@
 				630574C424C047B400690D38 /* AppDelegate.swift */,
 				630574C624C047B400690D38 /* SceneDelegate.swift */,
 				630574C824C047B400690D38 /* ViewController.swift */,
-				630574DA24C068FB00690D38 /* TableViewCell.swift */,
+				630574DC24C0B18A00690D38 /* DetailViewController.swift */,
+				630574DA24C068FB00690D38 /* Cell.swift */,
 				630574D824C0489F00690D38 /* File.swift */,
 				630574CA24C047B400690D38 /* Main.storyboard */,
 				630574CD24C047B500690D38 /* Assets.xcassets */,
 				630574CF24C047B500690D38 /* LaunchScreen.storyboard */,
+				632BB9F424C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf */,
+				632BB9F724C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf */,
+				632BB9F924C0BA8600B9F020 /* NeueAlteGrotesk-ExtraLight.ttf */,
+				632BB9F824C0BA8600B9F020 /* NeueAlteGrotesk-Heavy.ttf */,
+				632BB9F624C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf */,
 				630574D224C047B500690D38 /* Info.plist */,
 			);
 			path = Pryaniki;
@@ -131,8 +149,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				632BB9F524C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf in Resources */,
 				630574D124C047B500690D38 /* LaunchScreen.storyboard in Resources */,
+				632BB9FC24C0BA8600B9F020 /* NeueAlteGrotesk-Heavy.ttf in Resources */,
 				630574CE24C047B500690D38 /* Assets.xcassets in Resources */,
+				632BB9FA24C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf in Resources */,
+				632BB9FD24C0BA8600B9F020 /* NeueAlteGrotesk-ExtraLight.ttf in Resources */,
+				632BB9FB24C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf in Resources */,
 				630574CC24C047B400690D38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,9 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				630574DB24C068FB00690D38 /* TableViewCell.swift in Sources */,
+				630574DB24C068FB00690D38 /* Cell.swift in Sources */,
 				630574C924C047B400690D38 /* ViewController.swift in Sources */,
 				630574D924C048A000690D38 /* File.swift in Sources */,
+				630574DD24C0B18A00690D38 /* DetailViewController.swift in Sources */,
 				630574C524C047B400690D38 /* AppDelegate.swift in Sources */,
 				630574C724C047B400690D38 /* SceneDelegate.swift in Sources */,
 			);

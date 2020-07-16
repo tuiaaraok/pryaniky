@@ -15,7 +15,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bOg-NA-AY6">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgr" translatesAutoresizingMaskIntoConstraints="NO" id="bOg-NA-AY6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Пряники" translatesAutoresizingMaskIntoConstraints="NO" id="K7f-3Q-ARe">
@@ -43,7 +43,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1184" height="1133"/>
+        <image name="backgr" width="1184" height="1133"/>
         <image name="logo-a-512" width="512" height="512"/>
         <image name="Пряники" width="2880" height="993"/>
     </resources>
