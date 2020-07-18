@@ -18,21 +18,22 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgr" translatesAutoresizingMaskIntoConstraints="NO" id="bOg-NA-AY6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Пряники" translatesAutoresizingMaskIntoConstraints="NO" id="K7f-3Q-ARe">
-                                <rect key="frame" x="111" y="423" width="192" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo-a-512" translatesAutoresizingMaskIntoConstraints="NO" id="DVN-xG-dGJ">
-                                <rect key="frame" x="78" y="238" width="259" height="138"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-a-512" translatesAutoresizingMaskIntoConstraints="NO" id="DVN-xG-dGJ">
+                                <rect key="frame" x="116" y="342" width="183" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="S6x-04-G7c"/>
+                                    <constraint firstAttribute="width" constant="183" id="yIm-hI-OiC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bOg-NA-AY6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="F1P-V6-kJx"/>
-                            <constraint firstAttribute="bottom" secondItem="bOg-NA-AY6" secondAttribute="bottom" id="KaL-JX-XgK"/>
-                            <constraint firstItem="bOg-NA-AY6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="kbK-70-Mlp"/>
-                            <constraint firstItem="bOg-NA-AY6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="loT-Xz-cdl"/>
+                            <constraint firstAttribute="bottom" secondItem="bOg-NA-AY6" secondAttribute="bottom" id="QwB-xJ-kez"/>
+                            <constraint firstItem="bOg-NA-AY6" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TmR-ZK-04L"/>
+                            <constraint firstItem="DVN-xG-dGJ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="cYy-12-KGf"/>
+                            <constraint firstItem="DVN-xG-dGJ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fBh-4g-uN6"/>
+                            <constraint firstItem="bOg-NA-AY6" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="juN-sf-kJk"/>
+                            <constraint firstItem="bOg-NA-AY6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vqZ-jn-aqy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -44,7 +45,6 @@
     </scenes>
     <resources>
         <image name="backgr" width="1184" height="1133"/>
-        <image name="logo-a-512" width="512" height="512"/>
-        <image name="Пряники" width="2880" height="993"/>
+        <image name="logo-a-512" width="324" height="320"/>
     </resources>
 </document>

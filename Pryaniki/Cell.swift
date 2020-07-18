@@ -12,31 +12,22 @@ class Cell: UICollectionViewCell {
     
     @IBOutlet var label: UILabel!
     @IBOutlet var mainImage: UIImageView!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-       
-     
-    }
+
 
    
     
-    func configure(with pryanik: Pryanik, indexPath: IndexPath) {
+    func configure(with viewItems: [Data], indexPath: IndexPath) {
         
-        if pryanik.data?[indexPath.item].name == "picture" {
+        if viewItems[indexPath.item].name == "picture" {
 
-            guard let url = URL(string: pryanik.data?[indexPath.item].data?.url ?? "") else { return }
+            guard let url = URL(string: viewItems[indexPath.item].data?.url ?? "") else { return }
             
-            let session = URLSession.shared
-            
-            session.dataTask(with: url) { (data, _, _) in
-                
+            URLSession.shared.dataTask(with: url) { (data, _, _) in
                 
                 do {
                 if let data = data, let image = UIImage(data: data) {
                     DispatchQueue.main.async {
                         self.mainImage.image = image
-                        print("fvf")
                     }
                 }
                 } catch let error {
@@ -44,9 +35,11 @@ class Cell: UICollectionViewCell {
                 }
                 
             }.resume()
+        } else {
+            mainImage.isHidden = true
         }
     }
-        
+    
     }
     
    
