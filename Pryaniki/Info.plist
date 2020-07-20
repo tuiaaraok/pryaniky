@@ -4,12 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string></string>
+		<string>NeueAlteGrotesk-Medium.ttf</string>
+		<string>NeueAlteGrotesk-Bold.ttf</string>
+		<string>NeueAlteGrotesk-Book.ttf</string>
 	</array>
-	<key>Item2</key>
-	<string>NeueAlteGrotesk-Bold.ttf</string>
-	<key>Item1</key>
-	<string>NeueAlteGrotesk-Book.ttf</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
