@@ -47,8 +47,8 @@
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U85-tt-xT4">
                                                     <rect key="frame" x="67" y="36" width="240" height="128"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZZ-hJ-sR4">
-                                                    <rect key="frame" x="151.5" y="86" width="71.5" height="28"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZZ-hJ-sR4">
+                                                    <rect key="frame" x="140" y="86" width="94" height="28"/>
                                                     <fontDescription key="fontDescription" name="NeueAlteGrotesk-Medium" family="Neue Alte Grotesk" pointSize="27"/>
                                                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -128,7 +128,7 @@
                                             <constraint firstAttribute="width" constant="41" id="8a4-Sm-AzF"/>
                                             <constraint firstAttribute="height" constant="18" id="ADk-ct-fQZ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="NeueAlteGrotesk-Bold" family="Neue Alte Grotesk" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="NeueAlteGrotesk-Bold" family="Neue Alte Grotesk" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -151,7 +151,7 @@
                                 <rect key="frame" x="164" y="507" width="87" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.69368422029999999" blue="0.27698403589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="NeueAlteGrotesk-Medium" family="Neue Alte Grotesk" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="NeueAlteGrotesk-Bold" family="Neue Alte Grotesk" pointSize="17"/>
                                 <state key="normal" title="Назад">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -175,7 +175,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FbS-FW-Uza">
                                         <rect key="frame" x="38" y="72" width="251" height="23"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="NeueAlteGrotesk-Medium" family="Neue Alte Grotesk" pointSize="22"/>
+                                        <fontDescription key="fontDescription" name="NeueAlteGrotesk-Bold" family="Neue Alte Grotesk" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
