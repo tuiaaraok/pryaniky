@@ -16,9 +16,6 @@
 		630574D924C048A000690D38 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574D824C0489F00690D38 /* Model.swift */; };
 		630574DB24C068FB00690D38 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574DA24C068FB00690D38 /* Cell.swift */; };
 		630574DD24C0B18A00690D38 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630574DC24C0B18A00690D38 /* DetailViewController.swift */; };
-		632BB9F524C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F424C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf */; };
-		632BB9FA24C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F624C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf */; };
-		632BB9FB24C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 632BB9F724C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +30,6 @@
 		630574D824C0489F00690D38 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		630574DA24C068FB00690D38 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		630574DC24C0B18A00690D38 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		632BB9F424C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Bold.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Bold.ttf"; sourceTree = "<group>"; };
-		632BB9F624C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Medium.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Medium.ttf"; sourceTree = "<group>"; };
-		632BB9F724C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeueAlteGrotesk-Book.ttf"; path = "../../../Downloads/font (1)/NeueAlteGrotesk-Book.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +71,6 @@
 				630574CA24C047B400690D38 /* Main.storyboard */,
 				630574CD24C047B500690D38 /* Assets.xcassets */,
 				630574CF24C047B500690D38 /* LaunchScreen.storyboard */,
-				632BB9F424C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf */,
-				632BB9F724C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf */,
-				632BB9F624C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf */,
 				630574D224C047B500690D38 /* Info.plist */,
 			);
 			path = Pryaniki;
@@ -143,11 +134,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				632BB9F524C0BA7100B9F020 /* NeueAlteGrotesk-Bold.ttf in Resources */,
 				630574D124C047B500690D38 /* LaunchScreen.storyboard in Resources */,
 				630574CE24C047B500690D38 /* Assets.xcassets in Resources */,
-				632BB9FA24C0BA8600B9F020 /* NeueAlteGrotesk-Medium.ttf in Resources */,
-				632BB9FB24C0BA8600B9F020 /* NeueAlteGrotesk-Book.ttf in Resources */,
 				630574CC24C047B400690D38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
